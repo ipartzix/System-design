@@ -1,30 +1,25 @@
 class Student:
+    # Attributes :- variables inside the class are called attributes
     name = ""
     age = 0
     gender = ""
 
+    def set_info(self):
+        self.name = input("Enter your Name :")
+        self.age = input("Enter your age :")
+        self.gender = input("Enter your gender :")
+
+
+    def display(self):
+        print(f"My name is {self.name }. age is {self.age} my gender is {self.gender} ")
+
 # ======== Set the data =========
 
 s1 = Student()
-s1.name = "Partha"
-s1.age = 21
-s1.gender = "Male"
+s1.set_info()
+s1.display()
 
-# ========= Get the data =========
-
-print(s1.name)
-print(s1.gender)
-print(s1.age)
-
-# ======== Set the data =========
 
 s2 = Student()
-s2.name = "Pritam"
-s2.age = 16
-s2.gender = "Male"
-
-# ========= Get the data =========
-
-print(s2.name)
-print(s2.gender)
-print(s2.age)
+s2.set_info()
+s2.display()
