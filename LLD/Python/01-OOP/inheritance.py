@@ -15,3 +15,7 @@ dog = Dog()
 dog.bark()
 dog.eat()
 dog.sleep()
+
+animal = Animal()
+animal.sleep()
+animal.eat()
